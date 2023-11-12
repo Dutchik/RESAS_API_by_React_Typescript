@@ -36,8 +36,8 @@ const Styles: { [key: string]: React.CSSProperties } = {
     borderRadius: "24px",
     border: "solid 2px",
     textAlign: "center",
-    padding: "10px",
-    margin: "1px",
+    padding: "4px",
+    margin: "0.5rem",
   },
 };
 //////////////////////////////////////////////////////////////////////////////

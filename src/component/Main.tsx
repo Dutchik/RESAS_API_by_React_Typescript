@@ -26,18 +26,22 @@ const api_population = "https://opendata.resas-portal.go.jp/api/v1/population/co
 ///////////////////////////////////////////////////////////////////////////////
 //
 //CSSの記述
-//
+//     
 ///////////////////////////////////////////////////////////////////////////////
 const Styles: { [key: string]: React.CSSProperties } = {
     label: {
-        fontSize: "50px",
+        fontSize:"25px",
         padding: "0.5rem 2rem",
         borderLeft: "4px solid #000",
         marginLeft: "10px",
     },
+    label1: {
+        fontSize:"10px",
+        marginLeft: "10px",
+    },
     checkerea: {
-        fontSize: "30px",
-        padding: "0.5rem 2rem",
+        height: "300px",
+        overflow: "auto",
         border: "4px solid #000",
         marginLeft: "10px",
     },
@@ -122,8 +126,8 @@ const Main = () => {
         <main>
             <div>
                 <h1 style={Styles.label}>Resas_APIを使ったwebアプリケーションの実装</h1>
-                <h3>checkboxでチェックされた県の情報をグラフで表示出来ます</h3>
-                <h3>デフォルトで総人口を表示させています、内容の変更に関しては＜select＞の変更をしてください</h3>
+                <h3 style={Styles.label1}>checkboxでチェックされた県の情報をグラフで表示出来ます</h3>
+                <h3 style={Styles.label1}>デフォルトで総人口を表示させています、内容の変更に関しては＜select＞の変更をしてください</h3>
                 {prefectures && (
                     <div style={Styles.checkerea}>
                         <CheckBox
